@@ -1,14 +1,31 @@
+// next.config.ts
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   output: "standalone",
-  /* config options here */
-  typescript: {
-    ignoreBuildErrors: true,
+  // For Cloudflare compatibility
+  experimental: {
+    // Optional: if you need WASM or other features
+    // serverComponentsExternalPackages: [],
   },
-  reactStrictMode: false,
+  // Remove these or keep only if necessary
+  typescript: {
+    ignoreBuildErrors: true, // Consider removing for production
+  },
+  reactStrictMode: true, // Better to keep true
   eslint: {
-    ignoreDuringBuilds: true,
+    ignoreDuringBuilds: true, // Consider removing for production
+  },
+  // Optional: Image optimization settings
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    // Uncomment if using external images
+    // remotePatterns: [
+    //   {
+    //     protocol: 'https',
+    //     hostname: '**',
+    //   },
+    // ],
   },
 };
 

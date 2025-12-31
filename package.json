@@ -4,9 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000 2>&1 | tee dev.log",
-    "build": "next build && cp -r .next/static .next/standalone/.next/ && cp -r public .next/standalone/",
-    "start": "NODE_ENV=production bun .next/standalone/server.js 2>&1 | tee server.log",
+    "build": "next build",
+    "start": "NODE_ENV=production node .next/standalone/server.js 2>&1 | tee server.log",
     "lint": "next lint",
+    
+    "opennext:build": "opennextjs-cloudflare build",
+    "preview": "npm run opennext:build && wrangler dev",
+    "deploy": "npm run opennext:build && wrangler deploy",
+    
     "db:push": "prisma db push",
     "db:generate": "prisma generate",
     "db:migrate": "prisma migrate dev",
@@ -58,7 +63,7 @@
     "gsap": "3.14.2",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.525.0",
-    "next": "15.3.5",
+    "next": "^16.1.1",
     "next-auth": "^4.24.11",
     "next-intl": "^4.3.4",
     "next-themes": "^0.4.6",
@@ -83,6 +88,7 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@opennextjs/cloudflare": "^1.14.7",
     "@tailwindcss/postcss": "^4",
     "@types/react": "^19",
     "@types/react-dom": "^19",
