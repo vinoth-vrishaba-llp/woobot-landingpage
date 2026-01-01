@@ -222,7 +222,7 @@ export default function LandingPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-4 py-2 bg-red-100 text-red-700 rounded-full text-sm font-semibold" role="text" aria-label="Problem section">
-                ❌ Managing WooCommerce from Desktop is Painful
+                Managing WooCommerce from Desktop is Painful
               </div>
               <div className="text-3xl md:text-4xl font-bold text-gray-900" role="heading" aria-level={2}>
                 We solve the daily headaches of online store management.
@@ -275,7 +275,7 @@ export default function LandingPage() {
           <div className="max-w-4xl mx-auto text-center">
             <div className="solution-content">
               <div className="inline-block mb-6 px-4 py-2 bg-white/20 text-white rounded-full text-sm font-semibold backdrop-blur-sm">
-                ✅ One Smart WooBot to Control Your Entire Store
+                One Smart WooBot to Control Your Entire Store
               </div>
               <div className="text-3xl md:text-5xl font-bold text-white leading-tight mb-6" role="heading" aria-level={2}>
                 Our WooCommerce Store Manager WooBot gives you full power to manage everything from your phone or desktop — fast, secure, and always connected.
@@ -300,7 +300,7 @@ export default function LandingPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-4 py-2 bg-emerald-100 text-emerald-700 rounded-full text-sm font-semibold">
-                🧩 Powerful Features
+                Powerful Features
               </div>
               <div className="text-3xl md:text-4xl font-bold text-gray-900" role="heading" aria-level={2}>
                 Everything You Need to Run Your Store
@@ -366,7 +366,7 @@ export default function LandingPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-4 py-2 bg-pink-100 text-pink-700 rounded-full text-sm font-semibold">
-                ❤️ Why Clients Love This WooBot
+                Why Clients Love This WooBot
               </div>
               <div className="text-3xl md:text-4xl font-bold text-gray-900" role="heading" aria-level={2}>
                 Built for Growth & Performance
@@ -469,7 +469,7 @@ export default function LandingPage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <div className="inline-block mb-4 px-4 py-2 bg-emerald-500/20 text-emerald-400 rounded-full text-sm font-semibold">
-                📊 Real Business Benefits
+                Real Business Benefits
               </div>
               <div className="text-3xl md:text-4xl font-bold text-white" role="heading" aria-level={2}>
                 Proven Results That Matter
